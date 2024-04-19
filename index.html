@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                redKfc: '#e4002b',
+              }
+            }
+          }
+        }
+      </script>
 
     <title>Duplicate KFC</title>
 </head>
@@ -127,6 +138,17 @@
 
     <div class="bg-black h-[40px] text-white text-[13px] flex justify-center items-center">
         © 2024 KFCKU.com by PT FASTFOOD Indonesia Tbk. | All rights reserved.
+    </div>
+    
+    <div class="fixed bottom-[20px] right-[20px]">
+        <div class="flex flex-col justify-center items-center">
+            <div class="cursor-pointer order-shadow rounded-[50px]">
+                <img class="w-[80px]" src="pictures/order-now.png">
+            </div>
+            <button class="bg-redKfc font-bold text-white py-[5px] px-[10px] rounded-[13px] mt-[15px] order-shadow">
+                Order Now!
+            </button>
+        </div>
     </div>
 </body>
 </html>
